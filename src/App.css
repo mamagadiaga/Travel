@@ -19,6 +19,10 @@
   height: 100%;
   object-fit: cover; 
 } 
+.container {
+  position: relative;
+  z-index: 1;
+}
 .book{
   background: -webkit-linear-gradient(45deg, #085078 10%, #85d8ce 90%);
   background: -moz-linear-gradient(45deg, #085078 10%, #85d8ce 90%);
@@ -27,8 +31,29 @@
   background: linear-gradient(45deg, #085078 10%, #85d8ce 90%);
 }
 
-/* :root{
-  --PrimaryColor: hsl(199, 100%, 33%);
-  --SecondaryColor: hsl(199, 100%, 33%);
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #88c4e47c; 
+}
+input[type="range"]::-moz-range-track {
+  background-color: red; 
+}
+input[type="range"]::-ms-track {
+  background-color: red; 
+}
+.size{
+font-size: 13px;
+}
 
-} */
+.icones:hover{
+color: #1a5f97;
+}
+@media (max-width: 772px) {
+  .colonne{
+    margin-top: 50px !important;
+  }
+}
+@media (max-width: 768px) {
+  #acceuil {
+    height: 150vh;
+  }
+}
