@@ -2,10 +2,15 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import { BiSolidMap } from "react-icons/bi";
-import { MdOutlineTravelExplore } from "react-icons/md";
+import NavBar from "./used/NavBar";
 import { CgMenuGridR } from "react-icons/cg";
-import { AiFillFilter } from "react-icons/ai";
-import Bouton1 from "./used/bouton1";
+import { RiMenuUnfoldFill } from "react-icons/ri";
+import {
+  AiFillFilter,
+  AiOutlineTwitter,
+  AiFillYoutube,
+  AiFillInstagram,
+} from "react-icons/ai";
 
 const Section1 = () => {
   return (
@@ -17,90 +22,17 @@ const Section1 = () => {
             type="video/mp4"
           />
         </video>
-        <nav className="navbar navbar-expand-lg bg-white fixed-top">
-          <div className="container">
-            <a className="navbar-brand fw-bold fs-4" href="#">
-              <MdOutlineTravelExplore className="text-primary" />
-              Travel.
-            </a>
-            <button
-              className="navbar-toggler border-0 shadow-none"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span className="navbar-toggler border-0">
-                <CgMenuGridR className="text-primary fs-2" />
-              </span>
-            </button>
-            <div
-              className="collapse navbar-collapse"
-              id="navbarSupportedContent">
-              <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li className="nav-item">
-                  <a
-                    className="nav-link text-secondary me-3"
-                    aria-current="page"
-                    href="#">
-                    Home
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a
-                    className="nav-link text-secondary me-3"
-                    aria-current="page"
-                    href="#">
-                    Packages
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a
-                    className="nav-link text-secondary me-3"
-                    aria-current="page"
-                    href="#">
-                    Shop
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a
-                    className="nav-link text-secondary me-3"
-                    aria-current="page"
-                    href="#">
-                    About
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a
-                    className="nav-link text-secondary me-3"
-                    aria-current="page"
-                    href="#">
-                    News
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a
-                    className="nav-link text-secondary me-3"
-                    aria-current="page"
-                    href="#">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-              <form className="d-flex" role="search">
-                <Bouton1 contenu={"Book Now"} />
-              </form>
-            </div>
-          </div>
-        </nav>
+        <NavBar />
       </div>
       <div class="container mt-5 text-white p-5">
         <h6 class="text-light mt-5">OUR PACKAGES</h6>
         <h1 class="text-light fw-bold">
-          Search your <span className="border-bottom border-primary border-3">holiday</span>
+          Search your
+          <span className="border-bottom border-primary border-3">holiday</span>
         </h1>
-        <div className="row bg-white mt-5 text-secondary p-3 pb-5 rounded-3 position-relative" id="position">
+        <div
+          className="row bg-white mt-5 text-secondary p-3 pb-5 rounded-3 position-relative"
+          id="position">
           <div className="col-md-4 colonne">
             <span>Search your destination: </span>
             <div className="input-group mb-3 mt-3">
@@ -140,8 +72,26 @@ const Section1 = () => {
             />
           </div>
           <button
-            className="btn rounded-pill w-auto border-0 book text-white px-3 position-absolute top-100 start-50 translate-middle" type="submit"> <AiFillFilter /> More filters
+            className="btn rounded-pill w-auto border-0 book text-white px-3 position-absolute top-100 start-50 translate-middle"
+            type="submit">
+            {" "}
+            <AiFillFilter /> More filters
           </button>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-6 size">
+            <span className="fs-5">
+              <AiFillYoutube className="icones text-white-75" />
+              <AiOutlineTwitter className="icones text-white-75" />
+              <AiFillInstagram className="icones text-white-75" />
+            </span>
+          </div>
+          <div class="col-md-6 text-end size">
+            <span className="fs-5">
+              <CgMenuGridR className="icones text-white-75" />
+              <RiMenuUnfoldFill className="icones text-white-75" />
+            </span>
+          </div>
         </div>
       </div>
     </div>

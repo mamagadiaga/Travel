@@ -47,6 +47,11 @@ font-size: 13px;
 .icones:hover{
 color: #1a5f97;
 }
+.card:hover{
+  transform: scale(0.9);
+  background: #a8d1f1;
+  color: white !important;
+  }
 @media (max-width: 772px) {
   .colonne{
     margin-top: 50px !important;
